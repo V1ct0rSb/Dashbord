@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dde1ed;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  display: flex;
+}
+
+#toggle-button {
+  background-color: #9e6efe;
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 15px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+
+#toggle-button:hover {
+  background-color: #7e58c9;
+}
+
+/* nav-bar */
+.header {
+  background: white;
+  border: 2px solid rgb(222, 222, 222);
+  width: max(300px, 17vw);
+  height: 100vh;
+  border-radius: 0px 26px 26px 0px;
+  box-shadow: 8px 13px 40px 0px #f1efff;
+  text-align: center;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.header .logo {
+  margin: 50px 0px 90px 0px;
+}
+
+.menu-header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  gap: 20px;
+}
+
+.menu-header ul li a {
+  width: 190px;
+  height: 54px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.menu-header ul li a:hover {
+  color: #9e6efe;
+  background: #f9f6ff;
+  padding: 10px;
+}
+
+.menu-header ul li ion-icon {
+  font-size: 25px;
+}
+
+.option-header {
+  margin-top: 100px;
+}
+
+.option-header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  gap: 20px;
+}
+
+.option-header ul li a {
+  width: 190px;
+  height: 54px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.option-header ul li .option:hover {
+  color: #9e6efe;
+  background: #f9f6ff;
+  padding: 10px;
+}
+.option-header ul li .off:hover {
+  color: red;
+  background: #f9f6ff;
+  padding: 10px;
+}
+
+.option-header ul li ion-icon {
+  font-size: 25px;
+}
+
+.header.open {
+  transform: translateX(0);
+}
+
+/* header do conteudo  */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info .search,
+.user-info .notification {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.content-header .user img {
+  max-width: 80px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Isso permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+  border-radius: 100%;
+}
+
+.welcome-header h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.welcome-header p {
+  color: #6a6969;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* conteudo */
+
+.content-container {
+  width: 100vw;
+  padding: 60px 180px;
+}
+
+/* controle das box  */
+.main-box01 {
+  display: flex;
+  gap: 30px;
+}
+
+/* box  */
+.content-box01 {
+  width: 630px;
+  height: auto;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.content-box01 h2 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content-box02 {
+  border-radius: 5px;
+  width: 630px;
+  background-color: white;
+  padding: 15px 30px;
+}
+
+.content-box02 h2 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.transition {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f6ff;
+  color: #9e6efe;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.transition .day {
+  font-size: 16px;
+}
+
+.transition .value {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* grafico  */
+.content-boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px 20px 0px;
+}
+
+.box01,
+.box02,
+.box03,
+.box04 {
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px 30px;
+}
+
+.box01 h2,
+.box02 h2,
+.box03 h2,
+.box04 h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box01 .value,
+.box02 .value,
+.box03 .value,
+.box04 .value {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.box01 .progress,
+.box02 .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  margin-top: 15px;
+  background: rgb(165, 253, 165);
+  border-radius: 5px;
+  color: rgb(2, 126, 2);
+  width: 70px;
+  font-weight: 500;
+}
+
+.box03 .progress,
+.box04 .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  margin-top: 15px;
+  background: rgb(253, 165, 165);
+  border-radius: 5px;
+  color: rgb(126, 2, 2);
+  width: 80px;
+  font-weight: 500;
+}

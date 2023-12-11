@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <div class="logo">
+          <h1>VB</h1>
+        </div>
+
+        <div class="menu-header">
+          <ul>
+            <li>
+              <a href="#"
+                ><ion-icon name="grid-outline"></ion-icon>
+                <p>Dashboard</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon name="download-outline"></ion-icon>
+                <p>Carteira</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon name="cart-outline"></ion-icon>
+                <p>Transações</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon name="people-outline"></ion-icon>
+                <p>Suporte</p></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="option-header">
+          <ul>
+            <li>
+              <a href="#" class="option"
+                ><ion-icon name="settings-outline"></ion-icon>
+                <p>Ajustes</p></a
+              >
+            </li>
+            <li>
+              <a href="#" class="off"
+                ><ion-icon name="power-outline"></ion-icon>
+                <p>Desconectar</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- conteudo -->
+      <div class="content-container">
+        <button id="toggle-button">Menu Lateral</button>
+        <div class="content-header">
+          <div class="welcome-header">
+            <h2>Olá, Victor</h2>
+            <p>Aqui estão as informações sobre suas vendas.</p>
+          </div>
+
+          <div class="user-info">
+            <div class="search">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+
+            <div class="notification">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+
+            <div class="user">
+              <img
+                src="https://avatars.githubusercontent.com/u/112266976?v=4"
+                alt="user"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="main-box01">
+            <div class="content-box01">
+              <h2>Gráfico de Recitas</h2>
+              <canvas id="receitasChart"></canvas>
+            </div>
+
+            <!-- Historico de Transação  -->
+            <div class="content-box02">
+              <h2>Historico de Transações</h2>
+
+              <div class="transition">
+                <div class="day">Ontem</div>
+                <div class="value">R$-540,32</div>
+              </div>
+
+              <div class="transition">
+                <div class="day">Quinta-Feira</div>
+                <div class="value">R$-272,32</div>
+              </div>
+
+              <div class="transition">
+                <div class="day">Segunda-Feira</div>
+                <div class="value">R$-1456,32</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-boxs">
+            <div class="box01">
+              <h2>Total de Vendas</h2>
+              <div class="value">R$ 3.265,21</div>
+
+              <div class="progress">
+                <ion-icon name="trending-up-outline"></ion-icon>
+                <p>+11%</p>
+              </div>
+            </div>
+
+            <div class="box02">
+              <h2>Total Líquido</h2>
+              <div class="value">R$ 2.540,32</div>
+
+              <div class="progress">
+                <ion-icon name="trending-up-outline"></ion-icon>
+                <p>+ 11%</p>
+              </div>
+            </div>
+
+            <div class="box03">
+              <h2>Compras Canceladas</h2>
+              <div class="value">R$ 130</div>
+
+              <div class="progress">
+                <ion-icon name="trending-up-outline"></ion-icon>
+                <p>-80%</p>
+              </div>
+            </div>
+
+            <div class="box04">
+              <h2>Reembolsos</h2>
+              <div class="value">R$ 440,32</div>
+
+              <div class="progress">
+                <ion-icon name="trending-up-outline"></ion-icon>
+                <p>-78%</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Icons -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
+  <script src="script.js"></script>
+  <!-- grafico importar -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>
